@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Space+Grotesk:wght@700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+body {
+	height: 100vh;
+	// font-family: 'Roboto', sans-serif;
+	// font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	// font-family: 'Gilroy', sans-serif;
+	background: rgb(116,56,145);
+	background: linear-gradient(90deg, rgba(116,56,145,1) 0%, rgba(121,9,103,1) 100%);
+}
+.wrapper {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    min-height: 100%;
+
+    overflow: hidden;
+
+}
+.block {
+	padding: 0 0 0 10px;
+	width: 580px;
+	height: 150px;
+	border-radius: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class*=__container] {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+[class*=__big-container] {
+	max-width: 1830px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+@mixin scroll-appearance($X, $Y) {
+	transition: all 1s ease-in-out 0s;
+	transform: translate($X, $Y);
+	opacity: 0;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+.calc__input-a {
+	padding: 5px 0 5px 5px;
+	margin: 0 10px 0 0;
+
+	transition: background-color .3s ease-in;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .3);
+}
+.calc__input-a:focus {
+	background-color: rgba(255, 255, 255, 0.589);
+}
+.calc__input-b {
+	margin: 0 10px 0 0;
+	padding: 5px 0 5px 5px;
+
+	transition: background-color .3s ease-in;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .3);
+}
+.calc__input-b:focus {
+	background-color: rgba(255, 255, 255, 0.589);
+}
+.calc__select {
+	margin: 0 10px 0 0;
+}
+.calc__button {
+	padding: 10px;
+
+	transition: background-color .2s ease-in;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .3);
+}
+.calc__button:hover {
+	background-color: rgba(255, 255, 255, 0.61);
+}
+.calc__output {
+	margin: 10px 0 0 0;
+
+	font-size: 20px;
+}
+/* ============== BUTTON ============== */
+
+
+
+/* ============== BUTTON ============== */
